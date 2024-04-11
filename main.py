@@ -1,7 +1,6 @@
 from typing import List
 
 def twoSum(nums: List[int], target: int) -> List[int]:
-    # 원래 인덱스를 포함하여 정렬
     indexed_nums = sorted((num, i) for i, num in enumerate(nums))
     left, right = 0, len(nums) - 1
 
